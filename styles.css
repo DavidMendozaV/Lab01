@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e3f2fd; /* Azul claro */
+    margin: 0;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px; /* Reducido el tamaño */
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 20px;
+    color: #0d47a1; /* Azul oscuro */
+    margin-bottom: 10px;
+}
+
+/* Estilos para los campos de entrada */
+input {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    margin: 5px 0;
+    border: 2px solid #1976d2; /* Azul medio */
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Grupo de botones */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Botones */
+button {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e88e5; /* Azul más intenso */
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    flex: 1;
+    min-width: 45%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565c0; /* Azul más oscuro */
+}
+
+/* Resultado */
+#resultado {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0d47a1; /* Azul oscuro */
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid #1976d2;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Caja de error */
+.error-box {
+    margin-top: 8px;
+    padding: 8px;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: #ffcccc;
+    color: red;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+/* Responsividad */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+    
+    button {
+        min-width: 100%;
+    }
+}
